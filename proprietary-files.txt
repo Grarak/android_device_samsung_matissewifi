@@ -1,3 +1,17 @@
+# Audio
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
+vendor/lib/libcsd-client.so
+etc/Bluetooth_cal.acdb
+etc/General_cal.acdb
+etc/Global_cal.acdb
+etc/Handset_cal.acdb
+etc/Hdmi_cal.acdb
+etc/Headset_cal.acdb
+etc/Speaker_cal.acdb
+
 # ADSP
 bin/adsprpcd
 vendor/lib/libadsprpc.so
@@ -9,19 +23,6 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
-# Audio
-etc/Bluetooth_cal.acdb
-etc/General_cal.acdb
-etc/Global_cal.acdb
-etc/Handset_cal.acdb
-etc/Hdmi_cal.acdb
-etc/Headset_cal.acdb
-etc/Speaker_cal.acdb
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-
 # Bluetooth
 bin/btnvtool
 bin/hci_qcomm_init
@@ -30,7 +31,7 @@ vendor/lib/liboi_sbc_decoder.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8226.so
+lib/hw/camera.vendor.msm8226.so
 lib/libchromatix_s5k6a3yx_smart_stay.so
 lib/libchromatix_s5k6a3yx_vt.so
 lib/libchromatix_s5k6a3yx_vt_hd.so
@@ -46,28 +47,20 @@ lib/E08QL_libTsAe.so
 lib/E08QL_libTsAf.so
 lib/E08QL_libTs_J_Accm.so
 lib/E08QL_libTs_J_Awb.so
-lib/libacdapi_clb.so
 lib/libTsAe.so
 lib/libTsAf.so
 lib/libTs_J_Accm.so
 lib/libTs_J_Awb.so
 lib/libarcsoft_flawlessface.so
-lib/libarcsoft_night_shot.so
 lib/libarcsoft_panorama_burstcapture.so
-lib/libarcsoft_picaction.so
 lib/libarcsoft_skin_soften.so
 lib/libchromatix_s5k6a3yx_smart_stay.so
 lib/libchromatix_s5k6a3yx_vt.so
 lib/libchromatix_s5k6a3yx_vt_hd.so
-lib/libchromatix_s5k6a3yx_common.so
-lib/libchromatix_s5k6a3yx_default_video.so
-lib/libchromatix_s5k6a3yx_preview.so
 lib/libchromatix_s5k6a3yx_smart_stay.so
 lib/libchromatix_s5k6a3yx_vt.so
 lib/libchromatix_s5k6a3yx_vt_hd.so
-lib/libchromatix_s5k6a3yx_zslshot.so
 lib/libcnefeatureconfig.so
-lib/libgnustl_shared.so
 lib/libhdcp2.so
 vendor/lib/B08QT_libchromatix_imx175_common.so
 vendor/lib/B08QT_libchromatix_imx175_common_res0.so
@@ -169,7 +162,6 @@ bin/fm_qsoc_patches
 # GPS
 app/com.qualcomm.location.apk
 etc/permissions/com.qualcomm.location.xml
-etc/flp.conf
 lib/libloc_api_v02.so
 lib/hw/flp.default.so
 vendor/lib/libgeofence.so
@@ -219,7 +211,7 @@ vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
-vendor/lib/libHevcSwDecoder.so
+-vendor/lib/libHevcSwDecoder.so
 
 # Perf
 bin/mpdecision
@@ -228,7 +220,7 @@ vendor/lib/libqc-opt.so
 # Postprocessing
 bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
-vendor/lib/libmm-abl.so
+-vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
 
 # Qualcomm framework
@@ -262,15 +254,12 @@ lib/libomission_avoidance.so
 lib/libreference-ril.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
-lib/libsec-ril.so
-lib/libsec-ril-dsds.so
 lib/libril.so
 vendor/lib/libconfigdb.so
-vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
 
 # Sensors
-vendor/lib/hw/sensors.msm8226.so
+lib/hw/sensors.msm8226.so
 vendor/lib/libsensor1.so
 
 # Thermal
@@ -279,10 +268,8 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
-app/TimeService.apk
 bin/time_daemon
-vendor/lib/libtime_genoff.so
-vendor/lib/libTimeService.so
+-vendor/lib/libtime_genoff.so
 
 # WiFi
 bin/ptt_socket_app

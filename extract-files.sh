@@ -2,8 +2,8 @@
 
 set -e
 
-export VENDOR=samsung
 export DEVICE=matissewifi
+export VENDOR=samsung
 
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
@@ -25,11 +25,11 @@ function extract() {
                 adb pull /system/$FILE $2/$DEST
             fi
         else
-            cp $SRC/system/$FILE $BASE/$DEST
+            cp -v $SRC/system/$FILE $2/$DEST
             # if file dot not exist try destination
             if [ "$?" != "0" ]
                 then
-                cp $SRC/system/$DEST $BASE/$DEST
+                cp -v $SRC/system/$DEST $2/$DEST
             fi
         fi
     done
