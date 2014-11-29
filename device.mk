@@ -29,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # Dalvik VM
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
